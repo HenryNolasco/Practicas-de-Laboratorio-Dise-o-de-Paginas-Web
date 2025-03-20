@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .presentes{
+            color: green;
+        }
+        .ausentes{
+            color: brown;
+        }
+        .permisos{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Practica 6 : tablas en html</h1>
+    </header>
+    <hr>
+    <section>
+        <h2>tabla #1</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>producto</th>
+                    <th>cantidad</th>
+                    <th>precio unitario</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>manzana</td>
+                    <td>3</td>
+                    <td>$1.08</td>
+                </tr>
+
+                <tr>
+                    <td>pera</td>
+                    <td>5</td>
+                    <td>$1.25</td>
+                </tr>
+
+                <tr>
+                    <td>tomate</td>
+                    <td>4</td>
+                    <td>$0.75</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><strong>total:</strong> </td>
+                    <td>$12.25</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>tabla #2</h2>
+        <table border="1" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th>nombre</th>
+                    <th>apellidos</th>
+                    <th>materias</th>
+                    <th>asistencias</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>juan</td>
+                    <td>hernandez</td>
+                    <td>pagina web</td>
+                    <td><span class="presentes">precente</span></td>
+                </tr>
+
+                <tr>
+                    <td>jose</td>
+                    <td>beltran</td>
+                    <td>logica</td>
+                    <td><span class="ausentes">ausente</span></td>
+                </tr>
+
+                <tr>
+                    <td>pedro</td>
+                    <td>garcia</td>
+                    <td>matematica</td>
+                    <td><span class="permisos">con permiso</span></td>
+                </tr>
+                <tr>
+                    <td>gabriela</td>
+                    <td>pineda</td>
+                    <td>ingles</td>
+                    <td><span class="presentes">presente</span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">20/03/2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+    <section>
+        <h2>tabla #3</h2>
+        <table border="1" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th colspan="3" style="background-color: cyan;">ing. desarrollo de software</th>
+                </tr>
+                <tr>
+                    <th>estudiantes</th>
+                    <th>materias</th>
+                    <th>difilcultad</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>ivan</td>
+                    <td>base de datos</td>
+                    <td>media</td>
+                </tr>
+
+                <tr>
+                    <td>juan</td>
+                    <td>desarrollo wed</td>
+                    <td>dificil</td>
+                </tr>
+                
+                <tr>
+                    <td>daniela</td>
+                    <td>programacion orientada a eventos</td>
+                    <td>facil</td>
+                </tr>
+                <tr><td colspan="3">UNIVO</td></tr>
+            </tbody>
+        </table>
+    </section>
+    
+</body>
+</html>
