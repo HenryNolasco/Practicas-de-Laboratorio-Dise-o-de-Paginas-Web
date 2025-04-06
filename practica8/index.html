@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .btn{
+            padding: 10px;
+           background-color:rgb(5, 24, 168);
+           color:aliceblue;
+        }
+        form{
+            border: 1px solid;
+            background-color: rgb(118, 159, 145);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+     <h1 style="text-align:center ;">Este es el registro de facebook</h1>
+
+    <div>
+       <form action="index.html" method="get" style="text-align: center;">
+        <label for="text"><strong>Nombre:</strong></label>
+        <input type="text" name="nombre">
+        <br><br>
+        <label for="text"><strong>Apellido:</strong></label>
+        <input type="text" name="Apellido">
+        <br><br>
+        <label for="text"><strong>Email:</strong></label>
+        <input type="text" name="Email">
+        <br><br>
+        <label for="text"><strong>Contraseña:</strong></label>
+        <input type="text" name="Contraseña">
+        <br><br>
+        <label for="text"><strong>Confirmar Contraseña:</strong></label>
+        <input type="text" name="Confirmar Contraseña">
+        <br><br>
+        <button class="btn">Enviar</button>
+
+       </form>
+    </div>
+<hr>
+
+    <h1 style="text-align: center;">Encuesta</h1>
+    <div style="text-align: center;">
+
+        <form action="index.html" method="get">
+            <h2>Encuesta Academica</h2>
+            <label for="NivelDesatisfacion">¿Que tan satifecho son las practicas?</label>
+            <br><br>
+            <label for="NivelDesatisfacion">¿Poco satisfecho</label>
+            <input type="radio" value="1">
+            <label for="NivelDesatisfacion">Nada satisfecho</label>
+            <input type="radio" value="2">
+            <label for="NivelDesatisfacion">Muy satisfecho</label>
+            <input type="radio" value="3">
+            <br><br>
+            <label for="temas">¿Que temas te gustaria ver en el futuro</label>
+            <br><br>
+            <label for="tema1">Diseñoy estilo en html</label>
+            <input type="checkbox">
+            <label for="tema2">Combinar html con JavaScript</label>
+            <input type="checkbox">
+            <label for="tema3">Subir mi servidor a una pagina web</label>
+            <input type="checkbox">
+
+            <br><br>
+            <label for="descripcion"><strong>¿ A que país te gustaría viajar y si pudieras llevar a una persona a quien
+                llevarías y por que ?</strong></label>
+
+                <br><br>
+                <textarea name="descripcion"></textarea>
+                <br><br>
+                <button class="btn">Enviar</button>
+
+        </form>
+    </div>
+
+    <div>
+        <h1>Resenvacion de Hotel</h1>
+        <form action="index.html">
+            <form action="index.html" method="get" style="text-align: center;">
+                <label for="text"><strong>Nombre:</strong></label>
+                <input type="text" name="nombre">
+                <br><br>
+                <label for="text"><strong>Apellido:</strong></label>
+                <input type="text" name="Apellido">
+                <br><br>
+                <label for="text"><strong>Email:</strong></label>
+                <input type="text" name="Email">
+                <br><br>
+                <label for="fecha">Fecha de reserva</label>
+                <input type="date" name="Fecha">
+                <br><br>
+                <label for="hora">Hora de llegada</label>
+                <input type="date" name="Hora">
+                <br><br>
+                <label for="NumeroPersonas">Numero de Personas</label>
+                <input type="date" name="Personas">
+                <br><br>
+                <button class="btn">Enviar</button>
+        </form>
+    </div>
+
+    <div>
+        <h1>Enviar archivo</h1>
+        <form action="index.html" method="get">
+            <label for="text"><strong>Nombre del estudiante:</strong></label>
+                <input type="text" name="nombre" placeholder="nombre aqui">
+                <br><br>
+                <label for="archivo">Selecione el archivo a enviar: </label>
+                <input type="file" name="tarea">
+                <br><br>
+                <label for="comentarios"><strong>Enviar comentarios</strong></label>
+                <textarea name="comentarios"></textarea>
+                <br><br>
+                <button class="btn">Enviar</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
