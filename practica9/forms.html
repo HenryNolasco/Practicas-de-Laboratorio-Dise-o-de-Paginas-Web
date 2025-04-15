@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .titulo{
+            color: rgb(14, 57, 137);
+            text-align: center;
+            background-color: rgb(215, 207, 207);
+            padding: 15px;
+        }
+
+        ul{
+            list-style: none;
+            text-align: center;
+        }
+
+        li{
+            margin-top: 10px;
+        }
+
+        h2{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .contenedor{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+        form{
+            background-color: rgb(204, 210, 210);
+            padding: 15px;
+            border: 2px solid;
+        }
+        .btn{
+            padding: 5px;
+            border: 1px solid;
+            border-radius: 3px;
+            background-color: rgb(28, 145, 218);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1 class="titulo">concesionario de vehiculos SV</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">inico</a></li>
+                <li><a href="./forms.html">formulario para comprar un vehiculo</a></li>
+                <li><a href="./table.html">vehiculos disponibles</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h2>formulario para comprar un carro</h2>
+        <div class="contenedor">
+            <form action="#" method="get">
+                <label for="nombre">ingrese su nombre: </label>
+                <input type="text" id="nombre"><br><br>
+                <label for="apellido">ingrese su apellido: </label>
+                <input type="text"  id="apellido"><br><br>
+
+                <label for="email">ingrese su correo: </label>
+                <input type="email" id="email"><br><br>
+
+                <label for="contraseña">ingrese su contraseña: </label>
+                <input type="password" id="contraseña"><br><br>
+
+                <p><span>detalles del auto</span></p>
+
+                <label for="marcas">selecciona la marca: </label>
+                <select name="marcas" >
+                    <option value="toyota">toyota</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Ford">Ford</option>
+                    <option value="subaru">Subaru<option>
+                </select><br><br>
+
+                <label for="modelo">ingrese el modelo: </label>
+                <input type="text"  id="modelo"><br><br>
+
+                <p><span>seleccione accesorios</span></p>
+                <input type="checkbox">
+                <label for="accesorio1"> asientos de cuero</label><br><br>
+                <input type="checkbox">
+                <label for="accesorio2"> sonido envolvente</label><br><br>
+                <input type="checkbox">
+                <label for="accesorio3"> rines especiales</label><br><br>
+                <input type="checkbox">
+                <label for="accesorio4"> pintura especial</label><br><br>
+
+                <p><span>seleccione la version</span></p>
+                <input type="radio" name="version">
+                <label for="version">basica</label><br><br>
+                <input type="radio" name="version">
+                <label for="version">platinum</label><br><br>
+                <input type="radio" name="version">
+                <label for="version">premiun full</label><br><br>
+
+                <label for="color">seleccione el color: </label>
+                <input type="color"  id="color"><br><br>
+
+                <label for="cantida">ingresa cantidad a comprar: </label>
+                <input type="number"  id="cantidad"><br><br>
+
+                <label for="comprobante">ingrese comprobante crediticio: </label>
+                <input type="file"><br><br>
+
+                <input type="reset" class="btn">
+                <button class="btn">enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
