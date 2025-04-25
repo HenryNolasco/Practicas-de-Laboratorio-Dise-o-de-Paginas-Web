@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 50px
+        }
+        form{
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid;
+            padding: 10px;
+        }
+        fieldset{
+            margin-bottom: 15px;
+        }
+        label,input,select,textarea,p{
+            display: block;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        input[type="radio"],input[type="checkbox"]{
+            display: inline;
+            width: auto;
+        }
+        button{
+            margin-right: 10px;
+            border-radius: 5px;
+            padding: 5px;
+            color: aliceblue;
+            background-color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>datos para configurar su blog personal</h1>
+    </header>
+
+    <main>
+        <div>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>informacion basica</legend>
+                    <label for="titulo">Titulo del blog:</label>
+                    <input type="text" id="titulo" placeholder="titulo del blog" required>
+
+                    <label for="categiria">Categoria del blog</label>
+                    <select name="categoria" id="categoria" required>
+                        <option value="#" disabled>selecciona una categoria</option>
+                        <optgroup label="Noticias">
+                            <option value="noticias Nacionales">noticias nacionales</option>
+                            <option value="noticias">noticias internacionales</option>
+                        </optgroup>
+                        <optgroup label="tecnologia">
+                            <option value="IA">inteligencia artificial</option>
+                            <option value="diseño web">diseño web</option>
+                            <option value="otros">temas multiples</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="autor">Autor: </label>
+                    <input type="text" id="autor" list="autores" name="autor">
+                    <datalist id="autores">
+                        <option value="miguel angel"></option>
+                        <option value="alberto masferrer"></option>
+                        <option value="pedro"></option>
+                    </datalist>
+
+                    <label for="fecha-publicacion">fecha de publicacion : </label>
+                    <input type="date" id="fecha_publicacion" >
+
+                    <label for="hora_publcacion">hora de publicacion: </label>
+                    <input type="time"  id="hora_publicacion">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contenido</legend>
+                    <label for="resumen">resumen: </label>
+                    <textarea name="resumen" id="resumen" placeholder="escriba un breve resumente del blog"></textarea>
+
+                    <label for="etiquetas">etiquetas utilizadas</label>
+                    <input type="text" id="etiquetas" placeholder="html,js,css,tutoriales">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>archivos multimedia</legend>
+
+                    <label for="imagen">imagen de portada: </label>
+                    <input type="file" accept="image/">
+
+                    <label for="otro">otro archivos importantes: </label>
+                    <input type="file">
+
+                    <label for="url">url del sitio adicional</label>
+                    <input type="url" id="url">
+
+                    <label for="color">seleccione un color de fondo para el blog: </label>
+                    <input type="color">
+                </fieldset>
+
+                <fieldset>
+                    <legend> configuracion</legend>
+
+                    <p>tipo de publicacion : </p>
+                    <label for=""><input type="radio" name="tipo_publicacion" value="publico">publico</label>
+                    <label for=""><input type="radio" name="tipo_publicacion" value="privado">privado</label>
+                    <label for=""><input type="radio" name="tipo_publicacion" value="borrador">borrador</label>
+
+                    <p>opciones: </p>
+                    <label for=""><input type="checkbox" name="comentarios">permitir comentarios</label>
+                    <label for=""><input type="checkbox" name="destacar">permitir destacar</label>
+                    <label for=""><input type="checkbox" name="notificar">permitir notificaciones</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>informacion adicional</legend>
+
+                    <label for="email">Email: </label>
+                    <input type="email" placeholder="user@exampl.com">
+
+                    <label for="telefono">Telefono: </label>
+                    <input type="tel" placeholder="0000-0000">
+
+                    <label for="otro sitios">otros sitios</label>
+                    <input type="url"  id="otros_sitios">
+
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" placeholder="****">
+                </fieldset>
+
+                <div>
+                    <button type="submit">Publicar</button>
+                    <button type="reset">Limpiar</button>
+                    <button>guardar como borrador</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
